@@ -5,10 +5,11 @@ function Tours() {
     const [isForm, setIsForm] = useState(false)
 
     return <div>
-        <div>
-            Tours
-        </div>
-      <div className="cartdiv">
+    <div className="header">
+        <img className='headerphoto' src="https://i.imgur.com/hPgsRfY.jpg"/>
+        <div className="headertext">Tours</div>
+    </div>
+        <div className="cartdiv">
         <form className="checkoutcart">
             <label>Book Tour</label>
         </form>

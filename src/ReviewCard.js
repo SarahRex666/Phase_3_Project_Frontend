@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Review( { review }) {
-    const { name, entry } = review;
+function Review( { writereview }) {
+    const { username, review } = writereview;
     return (
          <div className='review'>
-                <h3>{name}</h3>
-                <p>{entry}</p>
+                <h3>{username}</h3>
+                <p>{review}</p>
             </div>
         )
 }

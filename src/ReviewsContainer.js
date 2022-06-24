@@ -4,9 +4,9 @@ import ReviewCard from './ReviewCard'
 function ReviewsContainer( {reviews }){
     return (
         <div className="reviews-container">
-            {reviews.map((review) => (
-                <div key={review.id}>
-                    <ReviewCard review={review} />
+            {reviews.map((writereview) => (
+                <div key={writereview.id}>
+                    <ReviewCard writereview={writereview} />
                 </div>
             ))}
         </div>

@@ -1,7 +1,7 @@
 body {
-  margin: 0;
-  font-family: gastromond, sans-serif;
-  font-weight: 400;
+  font-family: retiro-std-24pt, sans-serif;
+  font-weight: 200;
+  font-size: 1.2em;
   font-style: normal;
   display: flex;
 }
@@ -28,6 +28,7 @@ nav {
   font-size: 1.2em;
   padding: 1em;
   text-decoration: none;
+  margin-bottom: 2em;
 }
 
 .page-title {
@@ -94,5 +95,119 @@ nav {
     height: 214px;
     object-fit: cover;
     padding: 10px;
+  }
+
+  .sidebar {
+    height: 500px;
+    min-width: 12em;
+    width: 28%;
+    border: solid #212065 1px;
+    background: #b9a5ac;
+    padding: 1em;
+    margin-top: 2%;
+    margin-left: .5%
+  }
+  
+  .sidebar > button {
+    width: 100%;
+    font-family: kepler-std, serif;
+    font-weight: 700;
+    font-style: normal;
+    color:rgb(227, 148, 170);
+    margin-bottom: 2%;
+  }
+
+  .review{
+    background-color: #b9a5ac;
+    padding: 25px 50px;
+    border-radius: 2em;
+    border: solid #212065 1px;
+    margin-top: 10%;
+  }
+
+  .reviews-container {
+    max-width: 30em;
+    margin: auto; 
+  }
+  
+  .reviews-container > div {
+    border-bottom: solid 1px rgb(191, 159, 204);
+    padding-bottom: 1em;
+    min-width: 20em;;
+  }
+  
+  .reviews-container > div > button {
+    min-width: 4em;
+  }
+
+  form.new-dream-form {
+    border: solid black 1px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    font-family: retiro-std-24pt, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  form.new-review-form > input,
+  form.new-review-form > textarea {
+    font-size: 1em;
+    font-family: retiro-std-24pt, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin-bottom: 0.5em;
+  }
+  
+  input[type="submit"],
+  button {
+    font-weight: bold;
+    font-size: 1em;
+    background: #0a0943;
+    border: solid rgb(227, 148, 170) 1px;
+    padding: 0.5em;
+    cursor: pointer;
+    font-family: retiro-std-24pt, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color:rgb(227, 148, 170);
+    border-radius: 5em;
+    transition-duration: 0.4s;
+  }
+  
+  button:hover {
+    background-color: #5c4b69;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #dccfbe;
+    }
+
+  .headerphoto {
+    width: 60%;
+    border-radius: 12px;
+    height: 214px;
+    object-fit: cover;
+    padding: 10px;
+  }
+
+  .headertext {
+    position: absolute;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: gastromond, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff9ef;
+    font-size: 5em;
+    -webkit-text-stroke-color: #342105;
+    -webkit-text-stroke-width: .5px;
   }
 

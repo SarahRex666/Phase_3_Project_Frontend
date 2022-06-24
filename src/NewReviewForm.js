@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 function NewReviewForm({ handleNewReview }) {
     const [formState, setFormState] = useState({
-        name: '',
-        entry: '',
+        username: '',
+        review: '',
     })
 
     const handleChange = (e) => {
@@ -30,8 +30,8 @@ function NewReviewForm({ handleNewReview }) {
 
         <form className="new-review-form" onSubmit={handleSubmit}>
             <label>Review</label>
-            <input type="text" id="name" placeholder="Name" value={formState.title} onChange={handleChange} />
-            <textarea type="text" id="entry" placeholder="Give us your feedback!" rows={10} value={formState.entry} onChange={handleChange} />
+            <input type="text" id="username" placeholder="Name" value={formState.title} onChange={handleChange} />
+            <textarea type="text" id="review" placeholder="Give us your feedback!" rows={10} value={formState.entry} onChange={handleChange} />
             <input type="submit" value="Submit" />
 
         </form>

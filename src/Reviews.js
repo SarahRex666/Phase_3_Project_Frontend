@@ -23,8 +23,12 @@ function Reviews() {
   }
     
 
-return <div>
-    <h3>Reviews</h3>
+return (
+  <div className="reviewpage">
+    <div className="header">
+    <img className='headerphoto' src="https://i.imgur.com/03Hv3hR.jpg"/>
+    <div className="headertext">Reviews</div>
+    </div>
     
         <div className="sidebar">
       <ReviewsContainer reviews={reviews} />
@@ -32,6 +36,7 @@ return <div>
         {isForm ? <NewReviewForm handleNewReview={handleNewReview} reviews={reviews} /> : null}
       </div>
 </div>
+)
 }
 
 export default Reviews;
