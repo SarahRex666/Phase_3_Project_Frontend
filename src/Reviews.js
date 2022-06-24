@@ -18,6 +18,13 @@ function Reviews() {
   }, [])
   console.log(reviews)
 
+  function handleDeleteClick() {
+    fetch(`http://localhost:9292/reviews/${tours_id}`, {
+      method: "DELETE",
+    });
+    onRemoveListing(tours_id);
+  }
+
   function handleNewReview(newReview) {
     setReviews([...reviews, newReview]);
   }
