@@ -28,9 +28,7 @@ function Tours() {
         <ToursContainer tours={tours} />
     </div>
         <div className="cartdiv">
-        <form className="checkoutcart">
             <label>Book Tour</label>
-        </form>
       </div>
       <EmailForm />
     </div>
