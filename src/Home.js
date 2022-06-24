@@ -12,7 +12,7 @@ function Home(){
           }}>
 
             <div className='page-title'>
-              <div class='typetext'>
+              <div className='typetext'>
               SOJOURN
               </div>
               </div>

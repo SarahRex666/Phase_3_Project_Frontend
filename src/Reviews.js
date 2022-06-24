@@ -18,15 +18,13 @@ function Reviews() {
   }, [])
   console.log(reviews)
 
-  function handleDeleteClick() {
-    fetch(`http://localhost:9292/reviews/${tours_id}`, {
-      method: "DELETE",
-    });
-    onRemoveListing(tours_id);
-  }
-
   function handleNewReview(newReview) {
     setReviews([...reviews, newReview]);
+  }
+
+  function handleRemoveReview(id) {
+    const newReviews = reviews.filter((review) => review.id !== id);
+    setReviews(newReviews);
   }
     
 
@@ -36,12 +34,14 @@ return (
     <img className='headerphoto' src="https://i.imgur.com/03Hv3hR.jpg"/>
     <div className="headertext">Reviews</div>
     </div>
-    
         <div className="sidebar">
-      <ReviewsContainer reviews={reviews} />
       <button onClick={() => setIsForm(!isForm)}>Show/Hide Review Form</button>
         {isForm ? <NewReviewForm handleNewReview={handleNewReview} reviews={reviews} /> : null}
       </div>
+      <ReviewsContainer 
+      reviews={reviews}
+      onRemoveReview={handleRemoveReview} 
+      />
 </div>
 )
 }

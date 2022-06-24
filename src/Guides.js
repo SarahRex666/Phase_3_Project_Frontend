@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import GuidesContainer from './GuidesContainer'
+import GuidesContainer from './GuidesContainer';
 
-function Guides({ guide }) {
+function Guides() {
 
     const [guides, setGuides] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:9292/guide', {
+        fetch('http://localhost:9292/guides', {
           headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json'

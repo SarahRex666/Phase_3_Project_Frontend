@@ -66,7 +66,7 @@ nav {
   }
 }
 
-.guidecards {
+.tours-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -78,7 +78,7 @@ nav {
   margin-top: 20vh;
   }
 
-.guidecard {
+.tour {
   order: 0;
   flex: 0 1 auto;
   align-self: auto;
@@ -89,58 +89,94 @@ nav {
   margin-right: 30px;
   }
 
+  .timg {
+    max-width: 200px;
+  }
+
+  .guides-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 5vh;
+   }
+
+.guide {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  background-color: white;
+  border: 1px solid #c4bea1;
+  padding: 12px;
+  border-radius: 12px;
+  margin-right: 30px;
+  text-align: center;
+  font-family: kepler-std, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  }
+
   .gimg {
-    width: 100%;
-    border-radius: 12px;
-    height: 214px;
-    object-fit: cover;
-    padding: 10px;
+    max-width: 200px;
   }
 
   .sidebar {
     height: 500px;
     min-width: 12em;
     width: 28%;
-    border: solid #212065 1px;
-    background: #b9a5ac;
+    border: solid #4d584f 1px;
+    background: #dccfbe;
     padding: 1em;
     margin-top: 2%;
-    margin-left: .5%
+    margin-left: .5%;
+    margin-right: -100px;
+    margin-bottom: .5%;
+    text-align: center;
   }
   
   .sidebar > button {
     width: 100%;
     font-family: kepler-std, serif;
-    font-weight: 700;
+    font-weight: 300;
     font-style: normal;
-    color:rgb(227, 148, 170);
+    background-color:#4d584f;
     margin-bottom: 2%;
+    text-align: center;
   }
 
   .review{
-    background-color: #b9a5ac;
+    background-color: #dccfbe;
     padding: 25px 50px;
     border-radius: 2em;
     border: solid #212065 1px;
     margin-top: 10%;
+
   }
 
   .reviews-container {
-    max-width: 30em;
+    max-width: 20em;
     margin: auto; 
+    margin-left: 40em;
+    margin-top: -540px;
+    margin-right: -50px;
   }
   
   .reviews-container > div {
     border-bottom: solid 1px rgb(191, 159, 204);
     padding-bottom: 1em;
-    min-width: 20em;;
+    min-width: 20em;
   }
   
   .reviews-container > div > button {
     min-width: 4em;
+    padding-top: 1em;
   }
 
-  form.new-dream-form {
+  form.new-review-form {
     border: solid black 1px;
     padding: 1em;
     display: flex;
@@ -156,7 +192,8 @@ nav {
     font-family: retiro-std-24pt, sans-serif;
     font-weight: 200;
     font-style: normal;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
+    
   }
   
   input[type="submit"],
@@ -170,7 +207,8 @@ nav {
     font-family: retiro-std-24pt, sans-serif;
     font-weight: 200;
     font-style: normal;
-    color:rgb(227, 148, 170);
+    background-color:#4d584f;
+    color:#fff0db;
     border-radius: 5em;
     transition-duration: 0.4s;
   }

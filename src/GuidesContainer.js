@@ -6,7 +6,7 @@ function GuidesContainer({ guides }) {
         <div className="guides-container">
             {guides.map((guide) => (
                 <div key={guide.id}>
-                    <GuidesContainer guide={guide} />
+                    <GuideCard guide={guide} />
                 </div>
             ))}
         </div>
