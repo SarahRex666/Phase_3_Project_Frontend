@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import ToursContainer from './ToursContainer';
+import EmailForm from "./EmailForm.js";
 
 function Tours() {
 
     const [tours, setTours] = useState([])
     const [isForm, setIsForm] = useState(false)
+
 
     useEffect(() => {
         fetch('http://localhost:9292/tours', {
@@ -22,7 +24,7 @@ function Tours() {
         <img className='headerphoto' src="https://i.imgur.com/hPgsRfY.jpg"/>
         <div className="headertext">Tours</div>
     </div>
-    <div className="tour">
+    <div className="alltour">
         <ToursContainer tours={tours} />
     </div>
         <div className="cartdiv">
@@ -30,6 +32,7 @@ function Tours() {
             <label>Book Tour</label>
         </form>
       </div>
+      <EmailForm />
     </div>
 }
 

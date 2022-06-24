@@ -5,7 +5,7 @@ function ToursContainer({ tours }) {
     return (
         <div className="tours-container">
             {tours.map((tour) => (
-                <div key={tour.id}>
+                <div className="tourdivs" key={tour.id}>
                     <TourCard tour={tour} />
                 </div>
             ))}

@@ -65,32 +65,48 @@ nav {
     border-color: transparent
   }
 }
-
+.alltour{
+  max-width: 600px;
+}
 .tours-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  display:grid;
   justify-content: center;
   align-content: center;
   align-items: center;
-  max-width: 700px;
+  max-width: 400px;
   margin: 0 auto;
   margin-top: 20vh;
   }
 
 .tour {
   order: 0;
-  flex: 0 1 auto;
   align-self: auto;
   background-color: white;
   border: 1px solid #c4bea1;
   padding: 12px;
   border-radius: 12px;
   margin-right: 30px;
+  
   }
 
   .timg {
     max-width: 200px;
+  }
+
+  .tourdivs {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+    gap: 6px 19px; 
+    grid-template-areas: 
+      ". ."
+      ". ."
+      ". ."
+      ". ."
+      ". ."; 
+    align-content: space-around; 
+    justify-items: stretch; 
+    align-items: stretch; 
   }
 
   .guides-container {
